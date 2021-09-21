@@ -1,0 +1,51 @@
+.footer {
+  position: relative;
+  z-index: 9999;
+  font-size: .85em;
+  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: darken($primary-color, 10);
+  color: $white;
+
+  @include breakpoint(small) {
+    padding: rem-calc(10 35);
+    top: 0;
+  }
+  @include breakpoint(medium) {
+    padding: rem-calc(20 30);
+  }
+  @include breakpoint(large) {
+    padding: rem-calc(30 30);
+  }
+
+  a {
+    color: $white;
+  }
+
+  .footer-copyright {
+
+    @include breakpoint(small) {
+      font-size: .85em;
+      text-align: center;
+    }
+    @include breakpoint(medium) {
+      font-size: 1em;
+      text-align: left;
+    }
+
+  }
+
+  .footer-privacy {
+
+    @include breakpoint(small) {
+      font-size: .85em;
+      text-align: center;
+    }
+    @include breakpoint(medium) {
+      font-size: 1em;
+      text-align: right;
+    }
+
+  }
+
+}

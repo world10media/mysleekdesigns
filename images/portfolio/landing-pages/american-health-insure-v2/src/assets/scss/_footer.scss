@@ -1,0 +1,71 @@
+/* --------------------------
+footer
+-------------------------- */
+
+.site-footer {
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+  color: $white;
+  background: $secondary-color url('../img/footer-statue-liberty.svg') no-repeat center center;
+  background-size: cover;
+
+  @include breakpoint(small) {
+    padding: rem-calc(20 0 15 0);
+    height: 200px;
+  }
+
+  @include breakpoint(medium) {
+    padding: rem-calc(30 0);
+    height: 400px;
+  }
+
+  a {
+    color: $white;
+  }
+
+  .expanded {
+    padding-left: 0 ;
+    padding-right: 0;
+  }
+
+  .footer-statue-liberty-graphic {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+
+    @include breakpoint(small) {
+      padding-top: rem-calc(300);
+    }
+
+    @include breakpoint(medium) {
+      padding-top: 300px;
+    }
+
+  }
+
+}
+
+.footer-copyright {
+  @include breakpoint(small) {
+    font-size: .75em;
+    line-height: 2em;
+    text-align: center;
+  }
+  @include breakpoint(medium) {
+    text-align: left;
+  }
+}
+
+.footer-privacy {
+  @include breakpoint(small) {
+    font-size: .75em;
+    line-height: 2em;
+    text-align: center;
+  }
+  @include breakpoint(medium) {
+    text-align: right;
+  }
+
+}

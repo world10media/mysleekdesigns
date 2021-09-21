@@ -1,0 +1,24 @@
+<?php
+include "../../../common-LP/php/get_phone.php";
+
+$phone_number = get_phone($offer_id, $aff_id, $aff_sub, $default_phone, $ver);
+
+// GET ZIP from IP using function in geoip.php
+include "../../../common-LP/php/geoip.php";
+$zip = getzip($_SERVER['REMOTE_ADDR']);
+if ($zip == "") {
+    $zip = $default_zipcode;  // If cant have the ip then serve for default zip
+};
+
+echo $indexGTM;
+echo $indexHotJar;
+echo $impressionPixelHO;
+
+if (!isset($_SESSION['sub_page'])) {
+    include '../../../common-LP/php/session_params.php';
+    $arr = explode('insure/', $landing_page);
+    $sub_page = $arr[1];
+    $sub_page = trim($sub_page, "/");
+    $_SESSION['sub_page'] = $sub_page;
+};
+?>

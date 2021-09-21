@@ -1,0 +1,24 @@
+.health-icons-title,
+.health-icons-link {
+  color: $primary-color;
+}
+
+.health-icons-title {
+  font-size: 18px;
+}
+
+.health-icons-info {
+  font-size: 13px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.medical-icons {
+  width: 44px;
+  margin-bottom: 20px;
+}
+
+.intro-header {
+  font-size: 22px;
+  color: darken($primary-color, 10);
+}

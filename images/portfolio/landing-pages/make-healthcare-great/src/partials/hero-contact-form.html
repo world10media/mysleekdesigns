@@ -1,0 +1,73 @@
+<div class="hero">
+    <div class="row">
+
+        <!-- hero - content and hilary trump img -->
+        <div class="small-12 medium-6 large-7 columns end">
+            <div class="hero-content">
+                <h1 class="hero-header">No matter who wins you will pay</h1>
+                <h1 class="hero-header-two"><span class="header-callout-high-rates">high health insurance rates.</span></h1>
+                <h2 class="hero-callout-obamacare">Thanks Obamacare!!!</h2>
+                <h3 class="hero-callout-beat-rates">Beat the rate increase!<span class="hero-callout-get-insured">Get covered today before Clinton or Trump raise your rates again!</span>
+                </h3>
+            </div>
+            <div class="hilary-trump-img show-for-medium">
+                <img class="" src="../../assets/img/hilary-trump-trans-min.png" alt="hilary trump charicatures">
+            </div>
+        </div>
+
+        <!-- hero - form and phone cta -->
+        <div class="small-12 medium-6 large-5 columns contact-section ">
+
+            <div class="contact-form-header-container">
+                <p class="contact-form-header">Get Your Free Quote!</p>
+            </div>
+
+            <div class="form-container">
+                <form class="contact-form" id="contact-us" name="form1" role="form"
+                      action="../../assets/php/contact-mail.php"
+                      onSubmit="alert('Thank you for contacting us. Your message will be reviewed by a licensed agent and you will be contacted shortly. Have a great day.');"
+                      method="post">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <label>
+                                <input type="text" name="cname" id="cname" required
+                                       placeholder="Whats Your Full Name?">
+                            </label>
+                        </div>
+                        <div class="small-12 columns">
+                            <label>
+                                <input type="text" name="ccompany" id="ccompany" required
+                                       placeholder="What's Your Zip Code?">
+                            </label>
+                        </div>
+                        <div class="small-12 columns">
+                            <label>
+                                <input type="tel" id="cphone" name="cphone" required
+                                       pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}"
+                                       placeholder="Enter Your Phone Number">
+                            </label>
+                        </div>
+                        <div class="small-12 columns">
+                            <label>
+                                <input type="email" id="cemail" name="cemail" required
+                                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                                       placeholder="Enter Your Email Address">
+                            </label>
+                        </div>
+                        <div class="small-12 columns">
+                            <button class="button success large form-button" type="submit">Save Me Money!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="cta-phone-module">
+                <span class="cta-phone-module-header">or Call Us Today</span>
+                <a href="tel:<?php echo $phone_number; ?>"><span class="cta-phone-module-number"><img class="icon-mobile-phone" src="../../assets/img/icon-phone-blue.svg" alt="phone icon"><?php echo $phone_number; ?></span></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

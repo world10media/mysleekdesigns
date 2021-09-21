@@ -1,0 +1,37 @@
+.intro {
+
+  .intro-cta-2017 {
+    font-size: 22px;
+    color: darken($primary-color,10);
+  }
+
+  .intro-header {
+    font-size: 20px;
+    color: $primary-color;
+    margin-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .intro-body {
+    padding: 0 30px;
+  }
+
+}
+
+p {
+  color: #575757;
+  letter-spacing: .2px;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+hr {
+  width: 30%;
+  border: 1px solid $light-gray;
+  margin: 10px auto;
+}

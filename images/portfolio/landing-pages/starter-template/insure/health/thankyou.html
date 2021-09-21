@@ -1,0 +1,65 @@
+<?php
+include('../../assets/php/env.php');
+include('../../../common-LP/php/get_params.php');
+include('../../../common-LP/php/get_HO_url.php');
+?>
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediGapQuote - Affordable Medicare Insurance - <?php echo $aff_ref; ?></title>
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="stylesheet" href="../../assets/css/foundation-icons.css"/>
+
+    <link rel='shortcut icon' href='../../assets/img/favicon.ico' type='image/x-icon'/>
+
+    <script src="https://use.typekit.net/dig3ywx.js"></script>
+    <script>try {
+        Typekit.load({async: true});
+    } catch (e) {
+    }</script>
+</head>
+<body>
+
+<!-- start thank you -->
+
+<div class="expanded row">
+    <div class="thank-you text-center">
+        <h2 class="thank-you-header">Thank you for filling out our form</h2>
+        <p class="thank-you-subheader">One of our licensed agents is reviewing the info and will be getting in touch with you shortly. Have a great day.</p>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <script src="//insurance.mediaalpha.com/js/serve.js"></script>
+            <?php
+            //$insurance_type = 'health';
+            $zip = $_GET['zip'];
+            if ($zip == "") {
+                $zip = "33021";  // If cant have the ip then serve for zip = 33021
+            };
+            $uid = $_GET['uid'];
+            
+            if ($_GET['inty'] == 'medicare') {
+                echo '
+            <section style="margin-top:1em; max-width: 920px; margin: auto">
+            ' . MediaAlpha_Thankyou_Medicare($zip, $uid) . '
+            </section>
+            ';
+            } else {
+            echo '
+            <section style="margin-top:1em; max-width: 920px; margin: auto">
+                ' . MediaAlpha_Thankyou_Health($zip, $uid) . '
+            </section>
+            ';
+            }
+            ?>
+        </div>
+    </div>
+</div>
+
+<!-- end thank you -->
+
+</body>
+</html>

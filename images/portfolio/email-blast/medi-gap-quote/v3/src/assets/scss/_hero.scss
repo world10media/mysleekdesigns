@@ -1,0 +1,76 @@
+.hero {
+
+  .hero-container {
+    background: url("http://www.medigapquote.org/email/v3/assets/img/hero.jpg");
+    background-size: cover;
+    height: 330px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      height: 260px;
+    }
+
+    .hero-header {
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 32px;
+      color: $white;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 28px;
+      }
+
+    }
+
+    .hero-title-callout {
+      color: #ffd800;
+    }
+
+    .hero-subheader {
+      font-size: 24px;
+      font-weight: normal;
+      color: $white;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 20px;
+      }
+
+    }
+
+    .hero-list {
+      font-size: 18px;
+      color: $white;
+      margin-left: 20px;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 16px;
+        margin-left: 5px;
+      }
+
+    }
+
+    .hero-button-cta {
+      font-size: 20px;
+      margin-left: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 16px;
+        margin-left: 0;
+      }
+    }
+
+  }
+
+}
+
+.hero-header,
+.hero-subheader {
+  margin-left: 20px;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin-left: 0;
+    color: #ffffff;
+  }
+
+}

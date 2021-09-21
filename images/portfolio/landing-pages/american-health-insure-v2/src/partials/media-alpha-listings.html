@@ -1,0 +1,11 @@
+<script src="//insurance.mediaalpha.com/js/serve.js"></script>
+<?php
+//$insurance_type = 'health';
+$zip = $_GET['zip'];
+if ($zip == "") {
+    $zip = "33021";  // If cant have the ip then serve for zip = 33021
+};
+$uid = $_GET['uid'];
+
+echo show_Listings($zip, $uid, $_GET['inty'], 'FL');
+?>

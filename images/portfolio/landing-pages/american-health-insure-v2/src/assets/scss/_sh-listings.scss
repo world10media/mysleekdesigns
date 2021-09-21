@@ -1,0 +1,51 @@
+#SHlistings,
+.shChrome,
+.shSafari {
+  /*width: auto !important;*/
+
+  #listingsResults {
+    /*width: 200px !important;*/
+  }
+
+  .listingLogo {
+    @include breakpoint(small) {
+      width: 120px !important;
+    }
+    @include breakpoint(medium) {
+      width: 160px !important;
+    }
+  }
+
+  .listingDescription {
+    float: left;
+    /*width: auto !important;*/
+
+    @include breakpoint(small) {
+      width: 160px !important;
+    }
+    @include breakpoint(medium) {
+      width: 400px !important;
+    }
+  }
+
+  .cstmBtn {
+    margin-top: 18px !important;
+    float: right;
+
+    @include breakpoint(small) {
+      width: 80px !important;
+    }
+    @include breakpoint(medium) {
+      width: 100px !important;
+    }
+  }
+
+  .listingDescriptionBody {
+    font-size: .85em;
+  }
+
+  /*.listingTableAlt {
+    width: auto !important;
+  }*/
+
+}

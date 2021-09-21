@@ -1,0 +1,11 @@
+<?php
+session_start();
+$form_token = md5(session_id() . time());
+$_SESSION['form_token'] = $form_token;
+$aff_id = $_GET['aff_id'];
+$aff_sub = $_GET['aff_sub'];
+$offer_id = $_GET['offer_id'];
+$trans_id = $_GET['trans_id'];
+include ('../../../common-LP/php/forensiq.php');
+echo get_forensiq_script ($_SESSION['form_token'], $aff_id, $aff_sub, $offer_id, $trans_id);
+?>

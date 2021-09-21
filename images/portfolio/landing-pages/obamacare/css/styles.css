@@ -1,0 +1,476 @@
+/* -----------
+Typography
+----------- */
+
+h2 {
+    font-size: 20px;
+    color: #1b76cb;
+}
+
+h3 {
+    font-size: 18px;
+    color: #1b76cb;
+    margin-bottom: 15px;
+}
+
+p.intro {
+    font-size: 14px;
+    color: #606364;
+    max-width: 95%;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.terms {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.6em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    max-width: 1100px;
+}
+
+.privacy {
+    font-size: 12px;
+    line-height: 18px;
+    color: #97a4b2;
+    margin-top: 10px;
+}
+
+label.questions {
+    width: 600px;
+}
+
+.form-header {
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.modal-title {
+    font-size: 24px;
+    color: #1b76cb;
+    margin-bottom: 15px;
+}
+
+.modal-content {
+    font-size: 13px;
+    padding: 20px;
+    color: #666;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+
+/* -----------
+Layout
+----------- */
+
+.logo {
+    position: relative;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-left: 1em;
+    margin-top: -40px;
+}
+
+.logo-background {
+    position: absolute;
+    z-index: 1;
+    height: 115px;
+    width: 95%;
+    border-bottom: solid 1px #ccc;
+    margin-left: 15px;
+}
+
+.terms-container {
+    margin-top: 20px;
+}
+
+.conditions-container {
+    margin-bottom: 20px;
+}
+
+ul.checklist {
+    margin-top: 20px;
+}
+
+li {
+    list-style: none;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.health-conditions-list {
+    width: 30px;
+}
+
+/* -----------
+Forms
+----------- */
+
+.personal-form {
+    background-color: #dfecfa;
+    padding: 30px 20px 30px 20px;
+    margin-right: 30px;
+    border: 1px solid #ccc;
+}
+
+.form-container {
+    position: relative;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    margin-top: 60px;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    /* width: 120px; */
+    text-align: left;
+}
+
+label.expand-label {
+    width: 120px;
+}
+
+label.questions {
+    width: 58%;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+
+label#weight-label {
+    vertical-align: middle;
+    /* margin-bottom: 20px; */
+}
+
+input {
+    position: relative;
+    padding: 5px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+select {
+    position: relative;
+    font-size: 14px;
+    margin-bottom: 20px;
+    /* width: 70%; */
+    height: 34px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+select#state,
+select#gender {
+    width: 70%;
+}
+
+select#heightfeet,
+select#heightinches {
+    width: 34%;
+    display: inline-block;
+}
+
+
+select#DateOfBirth_Day,
+select#DateOfBirth_Month {
+    width: 17%;
+}
+
+select#DateOfBirth_Year {
+    width: 34%;
+}
+
+option {
+    padding: 5px;
+    color: #777;
+}
+
+
+/* -----------
+remove input type number arrows on desktop
+----------- */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/* ----------- 
+target specific input types ----------- */
+
+.radio-inline input[type=radio] {
+    margin-left: -24px;
+}
+
+
+/* -----------
+spacer serving as hr
+----------- */
+
+.spacer {
+    position: relative;
+    height: 10px;
+    color: #111;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    background: repeat-x;
+    margin-left: 15px;
+    max-width: 1030px;
+}
+
+
+/* -----------
+
+Style Input Types - Not using for now
+input[type=text] { border-color: green; }
+input[type=radio]:checked { box-shadow: 0 0 3px green; } - Styles after checked
+
+----------- */
+
+
+/* -----------
+Footer
+----------- */
+
+.footer {
+    background-color: #dfecfa;
+    font-size: 11px;
+    text-align: center;
+    color: #888;
+    line-height: 16px;
+    border-top: 1px solid #ccc;
+    height: 60px;
+}
+
+
+/* -----------
+Buttons
+----------- */
+
+.btn {
+    background: #ffd500;
+    background-image: -webkit-linear-gradient(top, #ffd500, #ffbf00);
+    background-image: -moz-linear-gradient(top, #ffd500, #ffbf00);
+    background-image: -ms-linear-gradient(top, #ffd500, #ffbf00);
+    background-image: -o-linear-gradient(top, #ffd500, #ffbf00);
+    background-image: linear-gradient(to bottom, #ffd500, #ffbf00);
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    border: 0px;
+    font-family: Arial;
+    color: #525252;
+    font-size: 20px;
+    padding: 15px 60px 15px 50px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #2bd954;
+    background-image: -webkit-linear-gradient(top, #2bd954, #23a644);
+    background-image: -moz-linear-gradient(top, #2bd954, #23a644);
+    background-image: -ms-linear-gradient(top, #2bd954, #23a644);
+    background-image: -o-linear-gradient(top, #2bd954, #23a644);
+    background-image: linear-gradient(to bottom, #2bd954, #23a644);
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn.btn-close-modal {
+    background-color: blue;
+    color: #555;
+    font-size: 15px;
+    padding: 10px 30px 10px 30px;
+}
+
+.modal {
+    position: absolute;
+    z-index: 9999;
+}
+
+.glyphicon {
+    font-size: 22px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+
+/* -----------
+Media Queries
+----------- */
+
+@media screen and (max-width: 1199px) {
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    input#email,
+    input#weight {
+        width: 100%;
+    }
+    label.questions {
+        white-space: pre-wrap;
+    }
+    label.birthday {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    select {
+        margin-bottom: 5px;
+    }
+    label.height {
+        display: block;
+        width: 100%;
+    }
+    .radio-inline input[type=radio] {
+        vertical-align: top;
+        /* margin-left: 20px; */
+        -moz-margin-left: 15px;
+        -webkit-margin-left: 15px;
+        -ms-margin-left: 15px;
+        -o-margin-left: 15px;
+    }
+    select {
+        width: 100%;
+    }
+    select#heightfeet,
+    select#heightinches {
+        width: 45%;
+        display: inline-block;
+    }
+    select#heightinches {
+        margin-left: 10px;
+    }
+    select#state,
+    select#gender {
+        width: 100%;
+    }
+    select#DateOfBirth_Day,
+    select#DateOfBirth_Month {
+        width: 25%;
+    }
+    select#DateOfBirth_Year {
+        width: 40%;
+    }
+    .btn {
+        width: 96%;
+        margin-top: 1px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    label.questions {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .form-group {
+        margin-bottom: 5px;
+    }
+    input {
+        margin-bottom: 5px;
+    }
+    label.birthday {
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    input#day,
+    input#month {
+        width: 25%;
+        display: inline-block;
+    }
+    input#year {
+        width: 40%;
+        display: inline-block;
+    }
+    .btn {
+        width: 96%;
+        margin-top: 1px;
+        margin-bottom: 15px;
+    }
+    .personal-form {
+        padding: 15px 5px 10px 5px;
+        margin: 0;
+    }
+    .form-container {
+        margin-top: 40px;
+    }
+    label#weight-label,
+    label.birthday {
+        margin-bottom: 5px;
+    }
+    h2 {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+    .form-header {
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+    .logo {
+        margin-top: -20px;
+    }
+    .logo-background {
+        height: 95px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    p.intro {
+        max-width: 100%;
+    }
+    .footer {
+        height: 80px;
+    }
+    select#DateOfBirth_Day,
+    select#DateOfBirth_Month {
+        width: 25%;
+        display: inline-block;
+    }
+    select#DateOfBirth_Year {
+        width: 40%;
+        display: inline-block;
+    }
+}
+
+
+/* -----------
+HACKS might be useful later on
+chrome/chromium font - select input rendering issues 
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local('Open Sans');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: local('Open Sans');
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-weight: 700;
+  src: local('Open Sans');
+}
+----------- */

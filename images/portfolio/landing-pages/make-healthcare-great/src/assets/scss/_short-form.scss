@@ -1,0 +1,78 @@
+/* --------------------------------------------
+custom form input styling
+-------------------------------------------- */
+
+input[type="text"],
+input[type="select"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+#state,
+#request,
+.custom-label,
+select {
+  padding-left: rem-calc(15);
+
+  @include breakpoint(small) {
+    height: rem-calc(42)!important;
+  }
+  @include breakpoint(medium) {
+    height: rem-calc(44)!important;
+  }
+  @include breakpoint(large) {
+    height: rem-calc(48)!important;
+  }
+
+  &:invalid {
+    background-color: lighten($alert-color, 30);
+  }
+
+  &:required:invalid {
+    border-color: lighten($alert-color, 30);
+    background-color: lighten($alert-color, 50);
+  }
+
+  &:required {
+    border-color: lighten($success-color, 5);
+    border-width: 1px;
+  }
+
+  &:focus {
+    background-color: lighten(#fff9b2, 10);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------------------
+keep it separate because of height and not required info
+----------------------------------------- */
+
+/*textarea {
+  border-radius: $global-radius;
+  padding-left: rem-calc(15);
+  color: darken(#ecf0f6,60);
+}*/
+
+
+/* --------------------------
+custom error messages
+-------------------------- */
+
+.error {
+  line-height: 1.35em;
+  /*color: $light-gray; - messed up font inside input fields */
+  background-color: lighten($alert-color,28);
+  border-color: #ebccd1;
+  padding:5px 10px 5px 15px;
+  border-radius: $global-radius;
+  margin-top: rem-calc(5);
+  margin-bottom: rem-calc(10);
+}

@@ -1,0 +1,8 @@
+<?php
+   if (!isset($_POST['insurance_type'])) {
+            $_POST['insurance_type'] = 'health';
+        }
+
+        include "../../../common-LP/php/getcity.php";
+        include "../../../common-LP/php/hidden_fields_form.php";
+?>

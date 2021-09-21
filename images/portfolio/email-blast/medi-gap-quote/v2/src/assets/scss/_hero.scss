@@ -1,0 +1,79 @@
+.hero {
+  max-width: 580px;
+  height: 300px;
+
+  .hero-container {
+    background: url("http://www.medigapquote.org/email/v1/assets/img/hero-new.jpg");
+    background-size: cover;
+
+    /*@media only screen and (max-width: #{$global-breakpoint}) {
+      background: url("http://www.medigapquote.org/email/v1/assets/img/hero-sm.jpg");
+      background-size: cover;
+      background-color: $primary-color;
+    }*/
+
+  }
+
+  .hero-header {
+    font-size: 30px;
+    line-height: 32px;
+    color: #1b4a89;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 30px;
+      /*color: #ffffff;*/
+    }
+
+  }
+
+  .hero-subheader {
+    font-size: 20px;
+    color: #2e63aa;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      /*color: #ffffff;*/
+    }
+
+  }
+
+  .hero-list {
+    font-size: 18px;
+    color: #2e63aa;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      /*color: #ffffff;*/
+    }
+
+    li {
+      list-style: disc;
+    }
+
+  }
+
+  table.button.secondary table td {
+    padding: 5px;
+    border: 0;
+    text-transform: uppercase;
+  }
+
+  .hero-button-cta {
+    margin-left: 15px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      margin-left: 0;
+    }
+
+  }
+
+}
+
+.hero-header,
+.hero-subheader {
+  margin-left: 20px;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin-left: 0;
+    color: #ffffff;
+  }
+
+}

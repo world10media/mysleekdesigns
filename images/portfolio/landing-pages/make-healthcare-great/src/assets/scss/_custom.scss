@@ -1,0 +1,17 @@
+.wrapper {
+  position: relative;
+
+  @include breakpoint(small) {
+    top: 0;
+  }
+  @include breakpoint(medium) {
+    top: 15px;
+  }
+  @include breakpoint(large) {
+    top: 15px;
+  }
+  @include breakpoint(xlarge) {
+    top: 30px;
+  }
+
+}

@@ -1,0 +1,16 @@
+<?php
+include "../../../common-LP/php/get_phone.php";
+
+$phone_number = get_phone($offer_id, $aff_id, $aff_sub, $default_phone, $ver);
+
+// GET ZIP from IP using function in geoip.php
+include "../../../common-LP/php/geoip.php";
+$zip = getzip($_SERVER['REMOTE_ADDR']);
+if ($zip == "") {
+    $zip = $default_zipcode;  // If cant have the ip then serve for default zip
+};
+
+echo $indexGTM;
+echo $indexHotJar;
+echo $impressionPixelHO;
+?>

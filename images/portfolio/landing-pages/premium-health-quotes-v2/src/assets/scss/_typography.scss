@@ -1,0 +1,35 @@
+/* --------------------------
+typography
+-------------------------- */
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4,h5,h6 {
+  font-weight: 300;
+  color: $primary-color;
+
+  @include breakpoint(small) {
+    line-height: 1.5em;
+    padding: rem-calc(5 0);
+  }
+  @include breakpoint(medium) {
+    line-height: 1.5em;
+    padding: rem-calc(0 0 15 0);
+  }
+
+}
+
+hr {
+  height: 1px;
+  width: 30%;
+  background-color: $light-gray;
+  border: none;
+}
+
+
+
+
+
+

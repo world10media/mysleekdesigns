@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Obamacare-healthquotes.com | The Fastest Way To Get Free Health Insurance Quotes and Save</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Hugo - This I grabbed from your template - Not sure if it supposed to be here or not -->
+    <!-- start Hugo template -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="form-group col-md-12 col-xs-12">
+                <label class="questions" for="">Does anyone have any major health conditions?</label>
+                <label class="radio-inline">
+                    <input onclick="show()" id="lb_conditions" type="radio" name="health" class="required" value="Y"> Yes
+                </label>
+                <label class="radio-inline">
+                    <input onclick="h_conditions()" id="lb_conditions2" type="radio" name="health" class="required" value="N"> No
+                </label>
+            </div>
+        </div>
+    </div>
+    <!-- health condtions start - hidden -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">              
+                <div id="previous_conditons" class="row" style="display:none">
+                    <div class="form-group col-md-12">
+                        <div class="conditions-checklist-holder">
+                            <div class="col-md-3 col-sm-3">
+                                <ul class="checklist">
+                                    <li>
+                                        <input class="health-conditions-list" id="hiv" name="hiv" type="checkbox" value="Y" />
+                                        <label for="hiv">AIDS/HIV</label>
+                                    </li>
+                                    <li>
+                                        <input class="health-conditions-list" id="diabetes" name="diabetes" type="checkbox" value="Y" />
+                                        <label for="diabetes">Diabetes</label>
+                                    </li>
+                                    <li>
+                                        <input class="health-conditions-list" id="liver-disease" name="liver-disease" type="checkbox" value="Y" />
+                                        <label for="liver-disease">Liver Disease</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <ul class="checklist" style="">
+                                    <li>
+                                        <input class="health-conditions-list" id="alzheimers" name="alzheimers" type="checkbox" value="Y" />
+                                        <label for="alzheimers">Alzeimers Disease</label>
+                                    </li>
+                                    <li>
+                                        <input class="health-conditions-list" id="lung-disease" name="lung-disease" type="checkbox" value="Y" />
+                                        <label for="lung-disease">Lung Disease</label>
+                                    </li>
+                                    <li>
+                                        <input class="health-conditions-list" id="substance-abuse" name="substance-abuse" type="checkbox" value="Y" />
+                                        <label for="substance-abuse">Substance Abuse</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <ul class="checklist" style="">
+                                    <li>
+                                        <input class="health-conditions-list" id="mental-illness" name="mental-illness" type="checkbox" value="Y" />
+                                        <label for="mental-illness">Mental Illness</label>
+                                    </li>
+                                    <li>
+                                        <input class="health-conditions-list" id="cancer" name="cancer" type="checkbox" value="Y" />
+                                        <label for="cancer">Cancer</label>
+                                    </li>
+                                    <li>
+                                        <input class="health-conditions-list" id="heart-disease" name="heart-disease" type="checkbox" value="Y" />
+                                        <label for="heart-disease">Heart Disease</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- health condtions end -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    function h_conditions() {
+        document.getElementById('previous_conditons').style.display = "none";
+    }
+
+    function show() {
+        document.getElementById('previous_conditons').style.display = "block";
+    }
+    </script>
+</body>
+
+</html>

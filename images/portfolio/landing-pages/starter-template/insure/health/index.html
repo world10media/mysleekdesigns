@@ -1,0 +1,164 @@
+<?php
+include('../../assets/php/env.php');
+include('../../../common-LP/php/get_params.php');
+include('../../../common-LP/php/get_HO_url.php');
+?>
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediGapQuote - Affordable Medicare Insurance - <?php echo $aff_ref; ?></title>
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="stylesheet" href="../../assets/css/foundation-icons.css"/>
+
+    <link rel='shortcut icon' href='../../assets/img/favicon.ico' type='image/x-icon'/>
+
+    <script src="https://use.typekit.net/dig3ywx.js"></script>
+    <script>try {
+        Typekit.load({async: true});
+    } catch (e) {
+    }</script>
+</head>
+<body>
+
+<!-- start hero -->
+<div class="hero">
+    <div class="row">
+        <div class="overlay"></div>
+        <div class="small-12 medium-12 columns hero-content">
+
+            <!-- start hero content  -->
+            <div class="hero-callout">
+                <h1 class="hero-header"><span class="hero-header-callout">Compare</span> Medicare Quotes</h1>
+                <p class="hero-subheader">... in three simple steps.</p>
+            </div>
+            <ul class="hero-list">
+                <li><img class="hero-list-circles-numbers" src="../../assets/img/circles-numbers-1.png" alt="1"> Fill out form</li>
+                <li><img class="hero-list-circles-numbers" src="../../assets/img/circles-numbers-2.png" alt="2"> Compare Plans</li>
+                <li><img class="hero-list-circles-numbers" src="../../assets/img/circles-numbers-3.png" alt="3"> Save time & money!</li>
+            </ul><!-- end hero content -->
+
+            <!-- start hero form-->
+            <form action="form.php" id="form1" method="post" class="hero-zip-submit">
+                <div class="row">
+                    <div class="small-10 medium-5 columns">
+
+                        <?php include "../../../common-LP/php/hidden_fields_index.php"; ?>
+                        
+                        <div class="input-group">
+                            <input type="tel" class="input-group-field" id="hero-zip-submit-input" name="zip" pattern="\d{5}"  value="<?php echo $zip; ?>" placeholder="Enter your zip code...">
+                            <div class="input-group-button">
+                                <input type="submit" class="button" id="hero-zip-submit-button" value="Start Quote">
+                            </div>
+                        </div>
+
+                        <!-- todo hugo i replaced the form in hero with the one above. please make sure it works. thanks. -->
+                            <!--<label>
+                                <input type="tel" id="hero-zip-submit-input" name="zip" pattern="\d{5}"  value="<?php echo $zip; ?>" placeholder="Enter your zip code...">
+                            </label>
+                                <button id="hero-zip-submit-button" type="submit" class="button">Start Quote <i class="fi-play"></i></button>-->
+                    </div>
+                </div>
+            </form><!-- end hero form -->
+
+            <!-- end hero content -->
+        </div>
+    </div>
+</div>
+<!-- end hero -->
+<!-- start carriers slider -->
+<div class="carriers">
+    <div class="row" id="carrier-logos">
+        <div class="small-12 medium-12 columns">
+            <div class="owl-carousel">
+                <div><img src="../../assets/img/carriers/aetna.jpg" alt="aetna"></div>
+                <div><img src="../../assets/img/carriers/anthem.jpg" alt="anthem"></div>
+                <div><img src="../../assets/img/carriers/cigna.jpg" alt="cigna"></div>
+                <div><img src="../../assets/img/carriers/fidelity-life.jpg" alt="fidelity life"></div>
+                <div><img src="../../assets/img/carriers/health-net.jpg" alt="health net"></div>
+                <div><img src="../../assets/img/carriers/humana.jpg" alt="humana"></div>
+                <div><img src="../../assets/img/carriers/united-health-one.jpg" alt="united health one"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end carriers slider -->
+<!-- start main -->
+<div class="what-is-medigap">
+    <div class="row">
+        <div class="small-12">
+            <h3>What is Medigap Insurance?</h3>
+            <hr>
+            <p class="text-center">Medicare Supplement Insurance, or Medigap as it’s often called, can help pay some of the health care costs that Original Medicare does not cover,
+                such as copayments, coinsurance, and deductibles. Medigap covers any gaps in coverage that would normally require you to pay out-of-pocket when Medicare falls
+                short. Typically, Medicare will pay its share of the Medicare-approved amount for a service and then Medigap pays its share so that the expense is paid in full. A
+                Medigap policy is particularly valuable for seniors that live on fixed budgets and need to limit their expenses.</p>
+        </div>
+    </div>
+</div>
+<!-- end main -->
+<!-- start short form -->
+<div id="short-form-enter-zip">
+    <div class="column row">
+        <h2 id="short-form-title">Find Medicare Plans that fit your needs!</h2>
+        <form action="form.php" method="post" class="short-form-zip-submit">
+            <div class="row">
+                <div class="small-12 medium-5 small-centered columns">
+                    <div class="input-group">
+                        <label for="zip"></label>
+                        <input class="input-group-field" type="tel" id="zip" name="zip" value="<?php echo $zip; ?>" placeholder="Enter your zip code...">
+                        <div class="input-group-button">
+                            <input type="submit" id="submit" class="button find-plans" value="Find Plans" onclick="document.getElementById('form1').submit();">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- end short form -->
+
+<!-- start faqs -->
+<div class="faqs">
+    <div class="row">
+        <div class="small-12 columns text-center">
+            <h3>Common Questions</h3>
+            <hr>
+            <h4>What is Medicare Supplemental Insurance?</h4>
+            <p>Medicare Supplement Insurance, or Medigap as it’s often called, can help pay some of the health care costs that Original Medicare does not cover, such as copayments,
+                coinsurance, and deductibles. Medigap covers any gaps in coverage that would normally require you to pay out-of-pocket when Medicare falls short. Typically,
+                Medicare will pay its share of the Medicare-approved amount for a service and then Medigap pays its share so that the expense is paid in full. A Medigap policy is
+                particularly valuable for seniors that live on fixed budgets and need to limit their expenses.</p>
+            <hr>
+            <h4>Why do I need Medicare Supplemental Coverage?</h4>
+            <p>Medicare Supplemental, or Medicare, coverage can help to cover costs that are not covered by Medicare, such as copays, deductibles, and coinsurance. Medigap coverage
+                can protect your finances by paying expenses that you would be required to pay out of pocket.</p>
+        </div>
+    </div>
+</div>
+<!-- end faqs -->
+<div class="column row">
+    <div class="small-12 medium-5 large-5 columns small-centered medium-centered">
+
+        <div class="phone-zip-module">
+            <div class="phone-module">
+                <h5>Speak with an agent now</h5>
+                <!--<span><a class="module-phone-cta" href="tel:1-408-555-5555"><img class="phone-icon" src="assets/img/icon-phone-orange.png" alt="phone icon">1-408-555-5555</a></span>-->
+                <span><a class="module-phone-cta" href="tel:<?php echo $phone_number; ?>">
+                    <img class="phone-icon" src="../../assets/img/icon-phone-orange.png" alt="phone icon"><?php echo $phone_number; ?></a>
+                </span>
+
+            </div>
+            <hr>
+            <div class="email-module">
+                <h5>or compare plans online</h5>
+                <button class="button compare-plans" onclick="document.getElementById('form1').submit();">Compare Plans <i class="fi-play"></i></button>
+            </div>
+        </div><!-- end module -->
+
+    </div>
+</div>
+</body>
+</html>

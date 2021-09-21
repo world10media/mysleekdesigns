@@ -1,0 +1,180 @@
+/* --------------------------
+main - body
+-------------------------- */
+
+.first {
+  color: darken($primary-color, 15);
+  text-align: center;
+
+  @include breakpoint(small) {
+    padding: rem-calc(5 0);
+  }
+  @include breakpoint(medium) {
+    padding: rem-calc(15 0);
+  }
+
+  .body-content {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.8em;
+    padding: rem-calc(15 0);
+  }
+
+  .body-content-header {
+    @include breakpoint(small) {
+      font-size: 1.65em;
+      line-height: 1.5em;
+    }
+    @include breakpoint(medium) {
+      font-size: 2em;
+      line-height: 1.5em;
+    }
+
+  }
+
+  .body-subheader {
+    font-size: 1.25em;
+    font-weight: 300;
+  }
+
+}
+
+.secondary {
+  color: darken($primary-color, 15);
+  text-align: center;
+  background-color: #f4f8fb;
+
+  @include breakpoint(small) {
+    padding: rem-calc(5 0);
+  }
+  @include breakpoint(medium) {
+    padding: rem-calc(15 0);
+  }
+
+  .body-content {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.8em;
+    padding: rem-calc(15 0);
+  }
+
+  .body-content-header {
+    @include breakpoint(small) {
+      font-size: 1.65em;
+      line-height: 1.5em;
+    }
+    @include breakpoint(medium) {
+      font-size: 2em;
+      line-height: 1.5em;
+    }
+    @include breakpoint(large) {
+      font-size: 2em;
+      line-height: 1.5em;
+    }
+
+  }
+
+  .body-subheader {
+    font-size: 1.25em;
+    font-weight: 300;
+
+  }
+
+  .body-list-image-left {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: auto;
+
+    @include breakpoint(small) {
+      padding-bottom: rem-calc(20);
+    }
+    @include breakpoint(medium) {
+      padding-bottom: rem-calc(0);
+    }
+
+  }
+
+  .body-list-right-side {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+
+    @include breakpoint(small) {
+      padding-top: rem-calc(15);
+    }
+    @include breakpoint(medium) {
+      padding-top: rem-calc(15);
+    }
+  }
+
+  ul {
+    @include breakpoint(small) {
+      text-align: center;
+      list-style-type: none;
+      margin-left:0;
+    }
+    @include breakpoint(medium) {
+      text-align: center;
+      list-style-type: none;
+      margin-left:0;
+    }
+    @include breakpoint(large) {
+      text-align: left;
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    li {
+      line-height: 1.5em;
+
+      @include breakpoint(small) {
+        padding-bottom: rem-calc(5);
+      }
+      @include breakpoint(medium) {
+        padding-bottom: rem-calc(10);
+      }
+      @include breakpoint(large) {
+        padding-bottom: rem-calc(10);
+      }
+
+    }
+
+  }
+
+  .list-header {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+
+    @include breakpoint(small) {
+      text-align: center;
+      padding-bottom: rem-calc(15);
+    }
+    @include breakpoint(medium) {
+      text-align: center;
+      padding-bottom: rem-calc(15);
+    }
+    @include breakpoint(large) {
+      text-align: left;
+      padding-bottom: rem-calc(5);
+    }
+
+  }
+
+}
+
+
+.body-content-button {
+  font-size: 1.15em;
+  font-weight: 600;
+  padding: rem-calc(15 80);
+  border-radius: $global-radius;
+}
+
+hr {
+  background-color: $light-gray;
+  width: 15%;
+}
+

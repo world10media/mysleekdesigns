@@ -1,0 +1,14 @@
+
+<?php
+include "../../../../common-LP/php/get_phone.php";
+$phone_number = $_POST['phone_number'];
+if ($phone_number == '') {
+    $offer_id = $_POST['offer_id'];
+    $aff_id = $_POST['aff_id'];
+    $aff_sub = $_POST['aff_sub'];
+    $phone_number = get_phone($offer_id, $aff_id, $aff_sub, $default_phone, $ver);
+}
+echo $formGTM;
+echo $formHotJar;
+echo get_HO_form_pixel($_POST['offer_id'], $_POST['trans_id']);
+?>

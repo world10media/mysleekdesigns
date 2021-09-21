@@ -1,0 +1,41 @@
+/* ---------------------------------------
+form styling - for all forms in LP
+--------------------------------------- */
+
+input[type="text"],
+input[type="select"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+#state,
+#request,
+.custom-label,
+select {
+  font-size: 1em;
+  height: rem-calc(48)!important;
+  padding-left: rem-calc(15);
+  border-radius: $global-radius;
+  color: darken(#ecf0f6,60);
+
+  &:invalid {
+    font-size: 1em;
+    background-color: lighten($alert-color, 40);
+  }
+
+  &:required:invalid {
+    font-size: 1em;
+    border-color: lighten($alert-color, 22);
+  }
+
+  &:required {
+    font-size: 1em;
+    border-color: darken($success-color, 3);
+    border-width: 1px;
+  }
+
+  &:focus {
+    font-size: 1em;
+    background-color: lighten(#fff9b2, 5);
+  }
+
+}

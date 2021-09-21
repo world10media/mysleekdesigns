@@ -1,0 +1,120 @@
+/* ==========================================================================
+   00. MEDIA ALPHA LISTINGS SECTION
+========================================================================== */
+
+#ad_unit_placeholder {
+
+  @include breakpoint(small) {
+    margin-top: -15px !important;
+    margin-bottom: 10px !important;
+    padding-top: 5px;
+  }
+  @include breakpoint(small) {
+    margin-top: 5px !important;
+    margin-bottom: 15px !important;
+    padding-top: 10px;
+  }
+
+}
+
+#ad_unit_placeholder p {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+td.description h2 {
+  font-size: 18px !important;
+}
+
+.max-ad-images {
+  padding: 10px !important;
+}
+
+tr td.max-ad-description h1 {
+  margin: 0 0 10px 0 !important;
+  text-shadow: none;
+
+  @include breakpoint(small) {
+    font-size: 13px !important;
+  }
+  @include breakpoint(medium) {
+    font-size: 15px !important;
+  }
+  @include breakpoint(large) {
+    font-size: 15px !important;
+  }
+
+}
+
+td.max-ad-number {
+  font-size: 18px;
+  padding: 15px 0 0 0 !important;
+  text-align: center;
+  color: #000;
+  min-width: 25px;
+  max-width: 25px;
+  display: none;
+}
+
+div.max-ad-image {
+  padding: 0;
+  box-shadow: none;
+}
+
+table.max-ad-listings tr td.max-ad-description li {
+  list-style-type: circle;
+  line-height: 15px !important;
+  color: #555;
+
+  @include breakpoint(small) {
+    font-size: 11px !important;
+  }
+  @include breakpoint(medium) {
+    font-size: 12px !important;
+  }
+}
+
+.large-ad {
+  display: none;
+}
+
+td.max-ad-images {
+  vertical-align: middle !important;
+
+  @include breakpoint(small) {
+    width: 120px !important;
+  }
+  @include breakpoint(medium) {
+    width: 130px !important;
+  }
+
+}
+
+table.max-ad-listings {
+  @include breakpoint(small) {
+    margin-top: -25px !important;
+  }
+  @include breakpoint(medium) {
+    margin-top: 0 !important;
+  }
+}
+
+
+
+
+
+
+
+
+/* this is for fitting the media alpha description lists better. */
+/* cant target specific tr td, overridden by #id unique per campaign, i think */
+
+/*table.max-ad-listings td.max-ad-description {
+  @include breakpoint(small) {
+    padding: 22px 10px 10px 10px !important;
+  }
+  @include breakpoint(medium) {
+    padding: 22px 10px 10px 10px !important;
+  }
+}*/
+

@@ -1,0 +1,388 @@
+.hero {
+  position: relative;
+  background-image: url("../../assets/img/hero-bkgd-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  color: $white;
+
+  @include breakpoint(small) {
+    padding: rem-calc(15);
+    text-align: center;
+    height: 830px;
+  }
+  @include breakpoint(medium) {
+    padding: rem-calc(15 20);
+    text-align: left;
+    height: auto;
+  }
+  @include breakpoint(large) {
+    padding: rem-calc(30);
+    text-align: left;
+    height: auto;
+  }
+
+  .hero-content {
+    position: relative;
+
+    @include breakpoint(small) {
+      top: 60px;
+    }
+    @include breakpoint(medium) {
+      top: 20px;
+    }
+
+  }
+
+  .hero-header {
+    position: relative;
+    font-weight: 300;
+    color: $white;
+    line-height: 1em;
+
+    @include breakpoint(small) {
+      font-size: 1em;
+      display: inline-block;
+    }
+    @include breakpoint(medium) {
+      font-size: 1.1em;
+      top: 5px;
+      display: inline-block;
+    }
+    @include breakpoint(large) {
+      font-size: 1.8em;
+      display: block;
+      top: 0;
+    }
+
+  }
+
+  .hero-header-two {
+    position: relative;
+    font-weight: 600;
+    color: $white;
+
+    @include breakpoint(small) {
+      font-size: 1.3em;
+      display: inline-block;
+    }
+    @include breakpoint(medium) {
+      font-size: 1.65em;
+      display: inline-block;
+    }
+    @include breakpoint(large) {
+      font-size: 1.65em;
+      display: block;
+    }
+
+  }
+
+  .header-callout-high-rates {
+    position: relative;
+    font-weight: 600;
+    line-height: 1.4em;
+    font-style: italic;
+    text-transform: uppercase;
+
+    @include breakpoint(small) {
+      font-size: 1em;
+      margin-left: 3px;
+      display: inline-block;
+    }
+    @include breakpoint(medium) {
+      font-size: 1em;
+      margin-bottom: rem-calc(15);
+      display: inline-block;
+      margin-left: 0;
+    }
+    @include breakpoint(large) {
+      font-size: 1.15em;
+      margin-left: 0;
+      display: block;
+      margin-bottom: rem-calc(0);
+    }
+
+  }
+
+  .hero-callout-obamacare {
+    position: relative;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $alert-color;
+    font-style: italic;
+    display: block;
+    line-height: 1em;
+
+    @include breakpoint(small) {
+      font-size: 1.3em;
+      top: 0;
+      margin-bottom: rem-calc(20);
+      margin-top: rem-calc(10);
+    }
+    @include breakpoint(medium) {
+      font-size: 2em;
+      margin-bottom: rem-calc(10);
+      margin-top: rem-calc(20);
+      top: -15px;
+    }
+    @include breakpoint(large) {
+      font-size: 2.7em;
+      margin-top: rem-calc(0);
+      margin-bottom: rem-calc(30);
+      top: 0;
+    }
+
+  }
+
+  .hero-callout-beat-rates {
+    position: relative;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1.65em;
+
+    @include breakpoint(small) {
+      font-size: 1.15em;
+    }
+    @include breakpoint(medium) {
+      font-size: 1.2em;
+    }
+    @include breakpoint(large) {
+      font-size: 1.8em;
+    }
+
+  }
+
+  .hero-callout-get-insured {
+    position: relative;
+    font-weight: 300;
+    line-height: 1.65em;
+    text-transform: capitalize;
+    display: block;
+
+    @include breakpoint(small) {
+      margin-right: rem-calc(0);
+      font-size: 1rem;
+    }
+    @include breakpoint(medium) {
+      margin-right: rem-calc(0);
+      font-size: 1.15rem;
+    }
+    @include breakpoint(large) {
+      margin-right: rem-calc(70);
+      font-size: 1.35rem;
+    }
+
+  }
+
+  .hilary-trump-img {
+    position: relative;
+    z-index: 100;
+    height: auto;
+
+    @include breakpoint(small) {
+      top: 30px;
+      left: -30px;
+      width: 94%;
+    }
+    @include breakpoint(medium) {
+      top: 24px;
+      left: -22px;
+      width: 110%;
+    }
+    @include breakpoint(large) {
+      top: 30px;
+      left: -30px;
+      width: 98%;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+/* ------------------------------
+CONTACT FORM
+------------------------------ */
+
+.contact-form {
+  position: relative;
+  background-color: lighten($light-gray, 5);
+  color: $primary-color;
+  margin-top: rem-calc(0);
+  border-radius: 0 0 $global-radius $global-radius;
+
+  @include breakpoint(small) {
+    padding: rem-calc(10 0);
+  }
+  @include breakpoint(small) {
+    padding: rem-calc(15 20);
+  }
+  @include breakpoint(large) {
+    padding: rem-calc(30);
+  }
+
+  .form-button {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: rem-calc(15 30);
+    background-color: $success-color;
+    width: 100%;
+
+    @include breakpoint(small) {
+      font-size: 1.2em;
+    }
+    @include breakpoint(large) {
+      font-size: 1.65em;
+    }
+    @include breakpoint(xlarge) {
+      font-size: 1.5em;
+    }
+  }
+}
+
+
+
+/* this moves the entire contact side - form and phone module */
+.short-form {
+  position: relative;
+
+  @include breakpoint(small) {
+    top: 80px;
+  }
+  @include breakpoint(medium) {
+    top: 5px;
+  }
+  @include breakpoint(large) {
+    top: 20px;
+  }
+
+}
+
+.contact-form-header-container {
+  position: relative;
+  background-color: #01399e;
+  border-radius: $global-radius $global-radius 0 0;
+
+  .contact-form-header {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: rem-calc(0);
+
+    @include breakpoint(small) {
+      font-size: 1.15em;
+      padding: rem-calc(10 0);
+    }
+    @include breakpoint(medium) {
+      font-size: 1.3em;
+      padding: rem-calc(15 0);
+    }
+    @include breakpoint(large) {
+      font-size: 1.65em;
+      padding: rem-calc(15 0);
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+.cta-phone-module {
+  position: relative;
+  background: rgb(11, 31, 82); /* for older browsers */
+  background: rgba(11, 31, 82, 0.8);
+  border-radius: $global-radius;
+  border: 1px solid $primary-color;
+  text-align: center;
+
+  @include breakpoint(small) {
+    top: 15px;
+    left: 0;
+    padding: rem-calc(10 5);
+  }
+  @include breakpoint(medium) {
+    top: 15px;
+    left: 0;
+    padding: rem-calc(5);
+  }
+  @include breakpoint(large) {
+    top: 30px;
+    padding: rem-calc(15);
+  }
+
+  .cta-phone-module-header {
+    position: relative;
+    font-weight: 400;
+    line-height: 1.3;
+    color: lighten($primary-color, 30);
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: rem-calc(0);
+
+    @include breakpoint(small) {
+
+    }
+    @include breakpoint(medium) {
+      font-size: .9em;
+    }
+    @include breakpoint(large) {
+      font-size: 1.1em;
+    }
+
+  }
+
+  .cta-phone-module-number {
+    position: relative;
+    font-weight: 600;
+    line-height: 1em;
+    color: $white;
+    text-transform: uppercase;
+    display: inline-block;
+
+    @include breakpoint(small) {
+
+    }
+    @include breakpoint(medium) {
+      font-size: 1.75em;
+    }
+    @include breakpoint(large) {
+      font-size: 2em;
+    }
+
+  }
+
+  .icon-mobile-phone {
+    position: relative;
+    display: inline-block;
+    left:-6px;
+    top:-3px;
+
+    @include breakpoint(small) {
+      width: 20px;
+      height: 20px;
+    }
+    @include breakpoint(medium) {
+      width: 26px;
+      height: 26px;
+
+    }
+    @include breakpoint(large) {
+      width: 32px;
+      height: 32px;
+    }
+
+  }
+
+}

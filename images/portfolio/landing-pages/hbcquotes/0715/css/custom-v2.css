@@ -1,0 +1,754 @@
+/***************************
+Typography
+***************************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.8em;
+    color: #545454;
+}
+
+h1 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1em;
+    color: #545454;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1em;
+    color: #545454;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #545454;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.8em;
+}
+
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+h4.clients-heading {
+    font-size: 30px;
+}
+
+p.privacy-sub-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+
+.header-pg2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: .9em;
+    color: #fff;
+    background-color: #81BABF;
+}
+
+.list-pg2 {
+    font-size: 1.3em;
+    line-height: 1.8em;
+}
+
+/***************************
+dont like - delete later
+
+hr { 
+    display: block;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border: 1px solid #dcdcdc;
+}
+
+***************************/
+
+hr {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dcdcdc;
+}
+
+.trust-symbols {
+    margin-bottom: 1em;
+}
+
+/***************************
+replace list items with image - not working right
+
+ul#ul-pg2 {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul#ul-pg2 li.list-pg2 {
+    padding-left: 10px;
+    background-image: url(/imgs/next.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0 .5em;  
+}
+***************************/
+
+/***************************
+Testimonials
+***************************/
+
+p.testimonials-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2em;
+    font-weight: 400;
+    margin-top: 1.5em;
+    margin-bottom: .7em;
+    text-transform: uppercase;
+    color: #545454;
+}
+
+p.testimonials-subheader {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-bottom: 1.5em;
+    color: #848484;
+}
+
+.testimonials {
+    bottom: 3em;
+    min-height: 400px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+}
+
+.testimonial-content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    margin-left: 5em;
+    padding-bottom: 1.5em;
+    color: #545454;
+}
+
+.clients {
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+}
+
+.clients .clients-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: #545454;
+}
+
+p.clients-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #545454;
+    text-align: center;
+}
+
+
+/***************************
+NavBar
+***************************/
+
+.navbar-default {
+    margin: 0 0;
+    height: 100px;
+    background-color: #07aab8;
+}
+
+.navbar-default {
+    height: 100px;
+}
+
+.navbar-brand img {
+    width: auto;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-brand {
+    height: 100px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: 1.5em;
+    color: #fff;
+}
+
+a:hover {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 2em;
+    color: red;
+}
+
+
+/***************************
+Hero
+***************************/
+
+.hero {
+    min-height: 716px;
+    margin-top: 0;
+    background: url(../imgs/hero-v2.jpg) no-repeat 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/***************************
+Hero - Typography
+***************************/
+
+.hero-header {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 7em;
+    font-weight: 700;
+    margin-top: .4em;
+    margin-bottom: .25em;
+    margin-right: 20px;
+    text-align: right;
+    letter-spacing: -3px;
+    color: #327D9E;
+}
+
+.hero-subheader {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-weight: 300;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: .1em;
+    text-align: right;
+    text-transform: uppercase;
+    color: #737373;
+}
+
+.hero-header-savings {
+    font-size: 1.2em;
+    color: #da4a4a;
+}
+
+.banner-text {
+    text-align: center;
+}
+
+.banner-text_grid {
+    min-height: 230px;
+    margin-bottom: 20px;
+    padding: 1em 1em;
+    background-color: #07aab8;
+}
+
+.banner-top {
+    position: relative;
+    z-index: 999;
+    bottom: 2em;
+    left: 0;
+    width: 100%;
+}
+
+.banner-text_grid h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: .7em;
+    padding: 0 0 0;
+    color: #fff;
+}
+
+.banner-text_grid p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    padding: 0 0 0;
+    color: #fff;
+}
+
+aside.clients img {
+    margin: 20px auto;
+}
+
+.glyphicon {
+    font-size: 1em;
+    margin: 0 auto;
+    padding-left: .5em;
+    color: #fff;
+}
+
+.bbb-icons {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bbb-icons img {
+    padding: 0 10px;
+}
+
+
+/***************************
+Forms
+
+.glyphicon {
+  font-size: 4em;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 75px;
+  border: 2px solid #fff;
+  padding: .5em .5em;
+}
+
+***************************/
+
+form {
+    font-family: 'Roboto', sans-serif;
+    font-size: .9em;
+    font-weight: 300;
+    line-height: 1.9em;
+    padding: 2em;
+    border: 1px solid #d8d8d8;
+    background-color: #e4e4e6;
+}
+
+.form-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-top {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+    font-weight: 300;
+    line-height: 1.3em;
+    margin-bottom: 0;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #18638c;
+}
+
+.form-top-pg2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.3em;
+    margin-bottom: 0px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #18638c;
+}
+
+.form-pg2 {
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.form-privacy {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #999;
+    line-height: 1.8em;
+}
+
+.questions-formpg2-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=radio] {
+    margin-top: 3px;
+}
+
+
+/***************************
+Form Controls
+***************************/
+
+.radio-inline {
+    /* margin-bottom: 0; */
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.free-quote {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #fff;
+}
+
+label {
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: #536d7e;
+    margin-right: .5em;
+}
+
+.form-inline .form-control {
+    vertical-align: baseline;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.form-control-inline {
+    min-width: 0;
+    width: auto;
+    display: inline;
+}
+
+
+/***************************
+FAQS
+***************************/
+
+.faqs {}
+
+.span #slider-prev {
+    display: inline-block;
+}
+
+.span #slider-next {
+    display: inline-block;
+}
+
+
+/***************************
+Buttons
+***************************/
+
+.btn {
+    white-space: normal;
+}
+
+.btn-primary {
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 0;
+    background-color: #07aab8;
+}
+
+.btn-secondary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    display: inline-block;
+    line-height: 1;
+    margin: 0;
+    padding: .7em 1em .7em 1em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-transition: background .5s, color .5s;
+    -moz-transition: background .5s, color .5s;
+    -ms-transition: background .5s, color .5s;
+    transition: background .5s, color .5s;
+    background: #f60;
+    background: -webkit-linear-gradient(top, #fd9a26 0%, #f60 100%);
+    background: -moz-linear-gradient(top, #ff9c00 0%, #f60 100%);
+    background: linear-gradient(to bottom, #ff9c00 0%, #f60 100%);
+    background-size: auto 120%;
+    margin-top: .5em;
+}
+
+.btn-secondary:focus {
+    color: #fff;
+    background: #f60;
+    background: -webkit-linear-gradient(top, #ff9c00 0%, #f60 100%);
+    background: -moz-linear-gradient(top, #ff9c00 0%, #f60 100%);
+    background: linear-gradient(to bottom, #ff9c00 0%, #f60 100%);
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background: #f60;
+    background: -webkit-linear-gradient(top, #ff9c00 0%, #f60 100%);
+    background: -moz-linear-gradient(top, #ff9c00 0%, #f60 100%);
+    background: linear-gradient(to bottom, #ff9c00 0%, #f60 100%);
+}
+
+.btn-contact {
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+
+.btn-secondary {
+    margin-bottom: 10px;
+}
+
+
+/***************************
+Footer
+***************************/
+
+.footer {
+    font-size: 1.3em;
+    height: 100px;
+    padding-top: 1.3em;
+    color: #fff;
+    background-color: #07aab8;
+}
+
+#myModal {
+    overflow: auto;
+    width: 920px;
+}
+
+.modal-body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.8em;
+    text-align: left;
+    color: #555;
+}
+
+.modal-content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.8em;
+    padding: 30px 60px;
+    text-align: left;
+    color: #555;
+}
+
+.privacy {
+    text-align: right;
+}
+
+.copyright-footer {
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+/***************************
+Media Queries
+***************************/
+
+
+/* Large 
+
+@media(min-width:1200px) {
+    .hero {
+        background: url(../imgs/hero-v2.jpg) no-repeat 0 0;
+        background-color: #e7edf2;
+    }
+}
+
+*/
+
+
+/* Medium */
+
+@media(min-width:992px) and (max-width:1199px) {
+    /* Large .hero {
+        background: url(../imgs/hero-v2.jpg) no-repeat 0 0;
+        min-height: 700px;
+    }
+    */
+    .hero-header {
+        font-size: 6em;
+    }
+    .banner-text_grid {
+        min-height: 260px;
+    }
+    .banner-top {
+        bottom: 2em;
+    }
+    .clients {
+        bottom: 0;
+    }
+    .testimonials {
+        bottom: 0;
+    }
+}
+
+
+/* Small */
+
+@media(min-width:768px) and (max-width:991px) {
+    .hero {
+        background-color: #e7edf2;
+        background-image: none;
+        min-height: 690px;
+    }
+    .testimonial-content {
+        margin-left: 1em;
+    }
+    .hero-header {
+        font-size: 6em;
+        line-height: 1.3em;
+        margin-top: .2em;
+        margin-right: 0;
+        text-align: center;
+    }
+    .hero-subheader {
+        font-size: 3em;
+        margin-right: 0;
+        text-align: center;
+    }
+    .banner-top {
+        bottom: 7em;
+    }
+    .banner-text_grid {
+        min-height: 156px;
+    }
+    .banner-text_grid h4 {
+        font-size: 1.5em;
+    }
+    .clients {
+        bottom: 10;
+    }
+    .testimonials {
+        bottom: 0;
+    }
+}
+
+
+/* Extra Small */
+
+@media(max-width:767px) {
+    .hero {
+        min-height: 540px;
+        background-color: #e7edf2;
+        background-image: none;
+    }
+    .testimonial-content {
+        margin-left: 1em;
+    }
+    .hero-header {
+        font-size: 3.2em;
+        line-height: 1.3em;
+        margin-top: .4em;
+        margin-bottom: .1em;
+        margin-right: 0;
+        text-align: center;
+    }
+    .hero-subheader {
+        font-size: 1.6em;
+        font-weight: 400;
+        line-height: 1.5em;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    .header-pg2 {
+        font-size: 1.6em;
+        font-weight: 400;
+        line-height: 1.5em;
+    }
+    .form-top {
+        font-size: 1.4em;
+    }
+    .form-top-pg2 {
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+    .banner-top {
+        bottom: 1em;
+    }
+    .banner-text_grid {
+        min-height: 86px;
+    }
+    .clients {
+        bottom: 0;
+    }
+    .testimonials {
+        bottom: 0;
+    }
+    .navbar-default {
+        height: 80px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .navbar-brand {
+        height: 82px;
+    }
+    h4 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .banner-text_grid h4 {
+        font-size: 1.3em;
+    }
+
+    
+}

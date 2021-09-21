@@ -1,0 +1,44 @@
+.preheader {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.top-border {
+  background: $secondary-color;
+}
+
+.header {
+  background: $white;
+
+  .columns {
+    padding-bottom: 0;
+  }
+
+  .online-version-link {
+    font-size: 12px;
+    padding-top: 5px;
+    text-align: right;
+    white-space: normal;
+  }
+
+  .wrapper-inner {
+    padding: 5px 15px;
+  }
+
+  .container {
+    background: transparent;
+  }
+
+  .logo {
+    width: 150px;
+    height: auto;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      width: 130px;
+      height: auto;
+    }
+
+  }
+
+}

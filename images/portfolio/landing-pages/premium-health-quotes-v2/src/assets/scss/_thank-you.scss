@@ -1,0 +1,45 @@
+.thank-you {
+
+  @include breakpoint(small) {
+    padding: rem-calc(20 15 5 15);
+  }
+  @include breakpoint(medium) {
+    padding: rem-calc(20 15 5 15);
+  }
+
+  .thank-you-header {
+    color: darken($primary-color, 15);
+
+    @include breakpoint(small) {
+      font-size: 1.1em;
+      line-height: 1.25em;
+    }
+    @include breakpoint(medium) {
+      font-size: 1.5em;
+      line-height: 1.5em;
+    }
+    @include breakpoint(large) {
+      font-size: 2em;
+      line-height: 1.5em;
+    }
+  }
+
+  .thank-you-subheader {
+    @include breakpoint(small) {
+      font-size: .8em;
+      line-height: 1.5em;
+      padding: rem-calc(2 5);
+    }
+    @include breakpoint(medium) {
+      font-size: 1em;
+      line-height: 1.65em;
+      padding: rem-calc(0 50);
+    }
+  }
+
+}
+
+.thank-you-emphasis {
+  font-weight: 600;
+  font-size: 1.6em;
+}

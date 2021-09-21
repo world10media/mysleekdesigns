@@ -1,0 +1,698 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+<style type="text/css" media="screen">
+/* Boilerplate Reset */
+
+
+body, p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+}
+h1 {
+	font-size: 22px;
+}
+img {
+	line-height: 100%;
+	outline: none;
+	text-decoration: none;
+	-ms-interpolation-mode: bicubic;
+}
+a img {
+	border: none;
+}
+#backgroundTable {
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+}
+a, a:link {
+	color: #2A5DB0;
+	text-decoration: underline;
+}
+.ExternalClass {
+	display: block !important;
+	width: 100%;
+}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+	line-height: 100%;
+}
+table td {
+	border-collapse: collapse;
+}
+sup {
+	position: relative;
+	top: 4px;
+	line-height: 7px !important;
+	font-size: 11px !important;
+}
+.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+	text-decoration: default;
+	color: #a9a9a9 !important; /* set link color */
+	pointer-events: auto;
+	cursor: default;
+}
+.no-detect a {
+	text-decoration: none;
+	color: #666; /* set text color */
+	pointer-events: auto;
+	cursor: default;
+}
+.no-detect-local a {
+	color: #a9a9a9;
+}
+span {
+	color: inherit;
+	border-bottom: none;
+}
+span:hover {
+	background-color: transparent;
+}
+
+        /* Base CSS */
+		@media only screen and (max-width: 500px) {
+.col {
+	width: 100%;
+	display: block !important;
+}
+}
+ @media only screen and (max-width: 599px) {
+td[class="wrap"] {
+	padding: 0 10px;
+}
+}
+
+        /* Reduce Navigation Pattern CSS */
+        @media only screen and (max-width: 400px) {
+}
+ @media only screen and (max-width: 465px) {
+td[class="main_nav"] td {
+	padding: 20px !important;
+}
+}
+ @media only screen and (max-width: 500px) {
+td[class="main_nav"] td {
+	font-size: 14px !important;
+	display: block !important;
+	padding: 10px 0 !important;
+	margin: 5px 0px;
+}
+}
+ @media only screen and (max-width: 599px) {
+#nav td[class="main_nav"] td {
+	display: none !important;
+}
+.hidewhenmobile {
+	display: none;
+}
+.button {
+	width: 100% !important;
+	padding: 12px 0 !important;
+	font-size: 16px !important;
+	text-align: center;
+}
+}
+</style>
+<style>
+/* 2 equal-width columns Layout Pattern CSS */
+
+@media only screen and (max-width: 599px) {
+#tewc td[class="pattern"] table {
+	width: 100%;
+}
+#tewc td[class="pattern"] img {
+	width: 100%;
+	height: auto !important;
+}
+#tewc td[class="pattern"] .col {
+	width: 50%;
+}
+}
+ @media only screen and (max-width: 450px) {
+#tewc td[class="pattern"] .col {
+	width: 100%;
+	display: block !important;
+}
+#tewc td[class="pattern"] .col1 {
+	margin-bottom: 16px;
+}
+#tewc td[class="pattern"] .description span {
+	display: block !important;
+	max-width: 300px;
+}
+}
+</style>
+<style>
+/* 2 Equal-Width Columns V2 Layout Pattern CSS */
+
+@media only screen and (max-width: 599px) {
+#tewc2 td[class="pattern"] table {
+	width: 100%;
+}
+#tewc2 td[class="pattern"] .hero_image img {
+	width: 100%;
+	height: auto !important;
+}
+}
+ @media only screen and (max-width: 450px) {
+#tewc2 td[class="pattern"] .spacer {
+	display: none;
+}
+#tewc2 td[class="pattern"] .col {
+	width: 100%;
+	display: block !important;
+}
+#tewc2 td[class="pattern"] .col:first-child {
+	margin-bottom: 30px;
+}
+#tewc2 td[class="pattern"] .hero_image img {
+	width: 100%;
+}
+}
+</style>
+<style>
+/* Shrink Wrap Layout Pattern CSS */
+
+@media only screen and (max-width: 599px) {
+#sw td[class="hero"] img {
+	width: 100%;
+	height: auto !important;
+}
+#sw td[class="pattern"] td {
+	width: 100%;
+}
+}
+</style>
+<style>
+/* Shrink Wrap Layout Pattern CSS */
+
+@media only screen and (max-width: 599px) {
+#sw2 td[class="hero"] img {
+	width: 100%;
+	height: auto !important;
+}
+#sw2 td[class="pattern"] td {
+	width: 100%;
+}
+}
+</style>
+<style>
+/* Column Drop Layout Pattern CSS */
+
+@media only screen and (max-width: 460px) {
+#mcs td[class="pattern"] .col {
+	display: block !important;
+	width: 100%;
+}
+#mcs td[class="pattern"] .col:first-child {
+	margin-bottom: 20px;
+}
+}
+</style>
+<style>
+/* List with Thumbnails Pattern CSS */
+
+@media only screen and (max-width: 599px) {
+#lwt td[class="pattern"] img {
+	width: 100%;
+	height: auto !important;
+}
+#lwt td[class="pattern"] .col {
+	width: 25%;
+}
+}
+ @media only screen and (max-width: 430px) {
+#lwt td[class="pattern"] .col {
+	width: 50%;
+	float: left;
+	margin-bottom: 20px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#lwt td[class="pattern"] .col table,  #lwt td[class="pattern"] .col img {
+	width: 100%;
+}
+}
+ @media only screen and (max-width: 380px) {
+#lwt td[class="pattern"] .col {
+	width: 100%;
+	display: block !important;
+	float: none;
+	padding: 0 !important;
+}
+#lwt td[class="pattern"] .col tr {
+	display: table-cell;
+	width: 60%;
+}
+#lwt td[class="pattern"] .col tr:first-child {
+	width: 40%;
+	padding-right: 20px;
+}
+#lwt td[class="pattern"] .col td {
+	font-size: 16px !important;
+}
+}
+</style>
+<style>
+/* List with Thumbnails Pattern CSS */
+
+@media only screen and (max-width: 599px) {
+#footer td[class="pattern"] img {
+	width: 100%;
+	height: auto !important;
+}
+#footer td[class="pattern"] .col {
+	width: 25%;
+}
+}
+ @media only screen and (max-width: 430px) {
+#footer td[class="pattern"] .col {
+	width: 50%;
+	float: left;
+	margin-bottom: 20px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#footer td[class="pattern"] .col table,  #lwt td[class="pattern"] .col img {
+	width: 100%;
+}
+}
+ @media only screen and (max-width: 380px) {
+#footer td[class="pattern"] .col {
+	width: 100%;
+	display: block !important;
+	float: none;
+	padding: 0 !important;
+}
+#footer td[class="pattern"] .col tr {
+	display: table-cell;
+	width: 60%;
+}
+#footer td[class="pattern"] .col tr:first-child {
+	width: 40%;
+	padding-right: 20px;
+}
+#footer td[class="pattern"] .col td {
+	font-size: 16px !important;
+}
+}
+</style>
+
+<!--[if gte mso 9]>
+    <style type="text/css">
+    h1 {font-family: arial,sans-serif;
+color: #007dc3;
+font-weight: bold;
+padding: 11px 0 9px;
+margin: 0;}
+
+.button {
+	width: 100% !important;
+	padding: 12px 0 !important;
+	font-size: 16px !important;
+	text-align: center;
+}
+    </style>
+<![endif]-->
+
+
+</head>
+
+<body>
+
+<!--     START Nav      -->
+
+<table id="nav" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#fff;">
+  <tbody>
+    <tr>
+      <td class="wrap" align="center" valign="top"  style="padding-top: 20px; " width="100%"><table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="preview" width="600"><p  style="font-family: arial,sans-serif;
+font-size: 12px;
+line-height: 20px !important;
+margin-bottom:4px;
+color: #999;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur justo.</p></td>
+            </tr>
+            <tr>
+              <td class="header"><table cellpadding="0" cellspacing="0" width="100%" style="
+    border-top: 5px solid #717174;
+    background: #f6f6f6;
+">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="bottom" class="logo"><a href="https://www.totalprotect.com/" target="_blank"><img src="http://shebangdesign.com/SC/CCHS-Responsive-Email/hp-images/logo-dtc.jpg" alt="" border="0" style="display: block !important; border: 0;" /></a></td>
+                      <td style="
+    
+"><p class="hidewhenmobile" style="text-align:right; padding-right:14px;font-family: arial,sans-serif; font-size: 10px; line-height: 15px !important; color: #666; margin: 0px;">Fusce dapibus justo sit amet risus.<br>
+                          <b style="
+    color: #007dc3;
+    font-size: 14px;
+">888.XXX.XXXX</b><br>
+
+Covering the {LastName} Home Since {Year} &bull;  Contract #: {12345678}</p></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+            <tr> 
+              
+              <!--     START Nav Items      -->
+              
+              <td class="main_nav" width="600"><table cellpadding="0" cellspacing="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td align="center" style="padding: 15px 10px 15px 20px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold; background-color: #007dc3; color:white; text-transform:uppercase;"><a href="http://link.email.totalprotect.com/s/lt?id=m45366351&amp;si=4593035297&amp;pc=i2002&amp;ei=a4801137&amp;b=y" target="_blank" style="text-decoration: none; color: #ffffff;">Request Service</a></td>
+                      <td align="center" style="padding: 15px 10px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold; background-color: #007dc3; color:white; text-transform:uppercase;"><a href="http://link.email.totalprotect.com/s/lt?id=n45366352&amp;si=4593035297&amp;pc=92003&amp;ei=a4801137&amp;b=y" target="_blank" style="text-decoration: none; color: #ffffff;">Appliance Buyline</a></td>
+                      <td align="center" style="padding: 15px 10px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold; background-color: #007dc3; color:white; text-transform:uppercase;"><a href="http://link.email.totalprotect.com/s/lt?id=o45366353&amp;si=4593035297&amp;pc=j2004&amp;ei=a4801137&amp;b=y" target="_blank" style="text-decoration: none; color: #ffffff;">Contact Us</a></td>
+                      <td align="center" style="padding: 15px 20px 15px 10px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold; background-color: #007dc3; color:white; text-transform:uppercase;"><a href="http://link.email.totalprotect.com/s/lt?id=o27815642&amp;si=4593035297&amp;pc=k2005&amp;ei=a4801137&amp;b=y" target="_blank" style="text-decoration: none; color: #ffffff;">Blog</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <!--     END Nav Items      --></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+
+<!--     END Nav      --> 
+
+<!--     START 1 Item w/o Border      -->
+
+<table id="sw2" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#fff;">
+  <tbody>
+    <tr>
+      <td class="wrap" align="center" valign="top" style="background:#fff;" width="100%"><table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="pattern" width="600"><table cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td width="600" style="padding: 20px 0;"><table cellpadding="0" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <td class="hero"><a href="http://totalprotect-home-warranty.com/seasonal-preparations/5-barbecue-tips-for-the-july-4-holiday/" target="_blank"><img src="img/july-4.jpg" alt="5 barbecue tips for july 4 holiday" border="0" style="display: block !important; border: 0;"></a></td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-family: arial,sans-serif; color: #007dc3;"><h1 style="font-family: arial,sans-serif;
+color: #007dc3;
+font-weight: bold;
+padding: 11px 0 9px;margin: 0;">5 barbecue tips for the July 4 holiday</h1></td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-family: arial,sans-serif; font-size: 14px; line-height: 20px !important; color: #666; padding-bottom: 20px;"> The week surrounding July 4 is one of America's favorites to bust out the grill and get cooking in the long days of summer. Here are 5 tips that will have those hungry mouths coming back for seconds, thirds and fourths.</td>
+                            </tr>
+                            <tr>
+                              <td align="left"><a href="http://totalprotect-home-warranty.com/seasonal-preparations/5-barbecue-tips-for-the-july-4-holiday/" target="_blank"><font class="button" style="padding: 12px 32px;background-color: #007dc3; color: white; text-decoration: none; display: inline-block; width: auto; font-family: arial,sans-serif;  font-size: 20px; font-weight:bold;
+">LEARN MORE »</font></a></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+
+<!--     END 1 Item w/o Border      --> 
+
+<!--     START 1 Item w/ Sidebar      -->
+
+<table id="mcs" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#fff;">
+  <tbody>
+    <tr>
+      <td class="wrap" align="center" valign="top" style="background:#fff;" width="100%"><table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="pattern" width="600"><table cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td style="border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 20px 0;"><table cellpadding="0" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <td class="col" width="300" align="left" valign="top"><table cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left" valign="top" style="font-family: arial,sans-serif; font-size: 14px; color: #333; padding-right: 20px;"><h1 style="font-family: arial,sans-serif;
+color: #007dc3;
+
+font-weight: bold;
+padding: 11px 0 9px;margin: 0;">Keep Your Cool... Guaranteed</h1>
+                                        <p style="padding-bottom: 10px; line-height: 20px !important;"> TotalProject is the only home warranty with a <a href="http://www.totalprotect.com/our-guarantee" target="_blank">180-Day Workmanship Guarantee</a>. We're dedicated to fixing things right, the first time.<br/><br/>
+In honor of our guarantee, we're giving away daily and monthly prizes - including $180 in cold hard cash and new appliances - to help you stay cool this summer.
+</p><br/>
+                                        <a href="https://www.facebook.com/TotalProtectHomeWarranty/app_683840291680357" target="_blank"><font class="button" style="padding: 12px 32px;background-color: #007dc3; color: white; text-decoration: none; display: inline-block; width: auto; font-family: arial,sans-serif;  font-size: 20px; font-weight:bold;
+">Play Today »</font></a></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td class="col" width="300" align="left" valign="top" style="background: #ebebeb;"><table cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left" valign="top" style="padding: 20px;"><table cellpadding="0" cellspacing="0">
+                                          <tbody>
+                                          <tr>
+                                              <td colspan="2" align="left" style="font-family: arial,sans-serif; font-size: 20px; font-weight: bold; color: #007dc3; padding-bottom: 10px;">Congrats to May winners!</td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="2" align="left" style="font-family: arial,sans-serif; font-size: 18px; font-weight: bold; color: #007dc3; padding-bottom: 10px;">Grand Prize:</td>
+                                            </tr>
+                                            <tr>
+                                              <td width="14" align="left" style="font-family: arial,sans-serif; font-size: 20px; color: #666;">•</td>
+                                              <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666;">Johnny A., Baltimore, MD</td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="2" align="left" style="font-family: arial,sans-serif; font-size: 18px; font-weight: bold; color: #007dc3; padding-top: 10px; padding-bottom: 10px;">First Prizes:</td>
+                                            </tr>
+                                            <tr>
+                                              <td width="14" align="left" style="font-family: arial,sans-serif; font-size: 20px; color: #666;">•</td>
+                                              <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666;">Jane D., Atlanta, GA</td>
+                                            </tr>
+                                            <tr>
+                                              <td width="20" align="left" style="font-family: arial,sans-serif; font-size: 20px; color: #666;">•</td>
+                                              <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666;">Mary O., Orlando, FL</td>
+                                            </tr>
+                                            <tr>
+                                              <td width="20" align="left" style="font-family: arial,sans-serif; font-size: 20px; color: #666;">•</td>
+                                              <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666;">Gary B., Phoenix, AZ</td>
+                                            </tr>
+                                            <tr>
+                                              <td width="20" align="left" style="font-family: arial,sans-serif; font-size: 20px; color: #666;">•</td>
+                                              <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666;">Kim E., Louisville, KY</td>
+                                            </tr>
+                                            <tr>
+                                              <td width="20" align="left" style="font-family: arial,sans-serif; font-size: 20px; color: #666;">•</td>
+                                              <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666;">Bobby H., Canton, OH</td>
+                                            </tr>
+                                            <tr>
+                                              <td width="20" align="left" style="font-family: arial,sans-serif; font-size: 20px; color: #666;">•</td>
+                                              <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666;">Albert A., Gainesville, FL</td>
+                                            </tr>
+                                          </tbody>
+                                          
+                                        </table></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+
+<!--     END 1 Item w/ Sidebar      --> 
+
+<!--     START 1 Item w/o Border      -->
+
+<table id="sw2" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#fff;">
+  <tbody>
+    <tr>
+      <td class="wrap" align="center" valign="top" style="background:#fff;" width="100%"><table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="pattern" width="600"><table cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td width="600" style="padding: 20px 0;"><table cellpadding="0" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <td class="hero"><a href="http://totalprotect-home-warranty.com/home-safety/beat-the-bugs-this-summer/" target="_blank"><img src="img/mosquito.jpg" alt="beat the bugs this summer" border="0" style="display: block !important; border: 0;"></a></td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-family: arial,sans-serif; color: #007dc3;"><h1 style="font-family: arial,sans-serif;
+color: #007dc3;
+font-weight: bold;
+padding: 11px 0 9px;margin: 0;">Beat the bugs this summer (the natural way)</h1></td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-family: arial,sans-serif; font-size: 14px; line-height: 20px !important; color: #666; padding-bottom: 20px;"> The hot weather brings barbecuing, patio dinner parties and outdoor fun in general. Unfortunately, it also brings everyone's least favorite pest - the mosquito.<br/><br/>
+Store-bought bug killers have chemicals that aren't good for you and your family. Check out these natural ways to beat the bugs.</td>
+                            </tr>
+                            <tr>
+                              <td align="left"><a href="http://totalprotect-home-warranty.com/home-safety/beat-the-bugs-this-summer/" target="_blank"><font class="button" style="padding: 12px 32px;background-color: #007dc3; color: white; text-decoration: none; display: inline-block; width: auto; font-family: arial,sans-serif;  font-size: 20px; font-weight:bold;
+">LEARN MORE »</font></a></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+
+<!--     END 1 Item w/o Border      --> 
+
+<!--     START 4 Item Row      -->
+
+<table id="lwt" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#fff;">
+  <tbody>
+    <tr>
+      <td class="wrap" align="center" valign="top" style="background:#fff;" width="100%"><table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="pattern" width="600"><table cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td width="600" style="padding: 30px 0; border-top: 1px solid #ccc; border-bottom: 0px solid #ccc;"><table cellpadding="0" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <td class="col" width="140" style="padding: 0 5px;"><table cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left"><a href="#"><img src="http://shebangdesign.com/SC/CCHS-Responsive-Email/hp-images/line-image1.jpg" width="140" alt="" style="display: block !important; border: 0;"></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #333; padding-top: 10px;"><strong style="
+    color: #007dc3;
+">Title of Content</strong><br>
+                                        Summary of content </td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td class="col" width="140" style="padding: 0 5px;"><table cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left"><a href="#"><img src="http://shebangdesign.com/SC/CCHS-Responsive-Email/hp-images/line-image2.jpg" width="140" alt="" style="display: block !important; border: 0;"></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #333; padding-top: 10px;"><strong style="
+    color: #007dc3;
+">Title of Content</strong><br>
+                                        Summary of content </td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td class="col" width="140" style="padding: 0 5px;"><table cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left"><a href="#"><img src="http://shebangdesign.com/SC/CCHS-Responsive-Email/hp-images/line-image3.jpg" width="140" alt="" style="display: block !important; border: 0;"></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #333; padding-top: 10px;"><strong style="
+    color: #007dc3;
+">Title of Content</strong><br>
+                                        Summary of content </td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                              <td class="col" width="140" style="padding: 0 5px;"><table cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left"><a href="#"><img src="http://shebangdesign.com/SC/CCHS-Responsive-Email/hp-images/line-image4.jpg" width="140" alt="" style="display: block !important; border: 0;"></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #333; padding-top: 10px;"><strong style="
+    color: #007dc3;
+">Title of Content</strong><br>
+                                        Summary of content </td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+
+<!--     END 4 Item Row      --> 
+
+<!--     START Footer      -->
+
+<table id="footer" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#fff;">
+  <tbody>
+    <tr>
+      <td class="wrap" align="center" valign="top" style="background:#fff;" width="100%"><table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="main_nav" width="600" style="padding-bottom: 10px;"><!--     START Bottom Nav      -->
+                <table cellpadding="0" cellspacing="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td align="center" style="padding: 15px 10px 15px 20px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold; background-color: #007dc3; color:white; text-transform:uppercase;"><a href="http://link.email.totalprotect.com/s/lt?id=m45366351&amp;si=4593035297&amp;pc=i2002&amp;ei=a4801137&amp;b=y" target="_blank" style="text-decoration: none; color: #ffffff;">Request Service</a></td>
+                      <td align="center" style="padding: 15px 10px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold; background-color: #007dc3; color:white; text-transform:uppercase;"><a href="http://link.email.totalprotect.com/s/lt?id=n45366352&amp;si=4593035297&amp;pc=92003&amp;ei=a4801137&amp;b=y" target="_blank" style="text-decoration: none; color: #ffffff;">Appliance Buyline</a></td>
+                      <td align="center" style="padding: 15px 10px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold; background-color: #007dc3; color:white; text-transform:uppercase;"><a href="http://link.email.totalprotect.com/s/lt?id=o45366353&amp;si=4593035297&amp;pc=j2004&amp;ei=a4801137&amp;b=y" target="_blank" style="text-decoration: none; color: #ffffff;">Contact Us</a></td>
+                      <td align="center" style="padding: 15px 20px 15px 10px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold; background-color: #007dc3; color:white; text-transform:uppercase;"><a href="http://link.email.totalprotect.com/s/lt?id=o27815642&amp;si=4593035297&amp;pc=k2005&amp;ei=a4801137&amp;b=y" target="_blank" style="text-decoration: none; color: #ffffff;">Blog</a></td>
+                    </tr>
+                  </tbody>
+              </table>                <!--     END Bottom Nav      --></td>
+            </tr>
+            <tr>
+              <td class="footer" width="600" align="left" style="padding: 10px 0; font-family: arial,sans-serif; font-size: 12px; color: #717174; text-align:center;"><b style="font-size:14px;">Fusce dapibus justo sit amet risus.</b><br>
+                <b style="font-size:22px; color:#007dc3;">888.XXX.XXXX</b><br>
+                <br>
+                <span class="footer" style="padding: 10px 0; font-family: arial,sans-serif; font-size: 12px; color: #717174; text-align:center;"><span style="color:#007dc3;"><a target="_blank" href="https://www.facebook.com/TotalProtectHomeWarranty"><img src="http://link.email.homeprotectwarranty.com/site/8900/images/1403nws_fb.jpg" alt="Facebook" /></a> <img src="http://link.email.homeprotectwarranty.com/site/8900/images/1403nws_div.jpg" /> <a target="_blank" href="https://plus.google.com/u/0/101805389168348231278/post"><img src="http://link.email.homeprotectwarranty.com/site/8900/images/1403nws_google_plus.jpg" alt="Google+" /></a> <img src="http://link.email.homeprotectwarranty.com/site/8900/images/1403nws_div.jpg" /> <a target="_blank" href="https://twitter.com/TotalProtect1"><img src="http://link.email.homeprotectwarranty.com/site/8900/images/1403nws_twitter.jpg" alt="Twitter" /></a></span><br />
+                <br />
+                <a target="_blank" href="http://www.totalprotect.com/web/total-protect/privacy-policy?utm_source=eway&utm_medium=email&utm_campaign=1406kpclsm">Privacy Policy</a> | <a target="_blank" href="http://www.totalprotect.com/web/total-protect/terms-of-use?utm_source=eway&utm_medium=email&utm_campaign=1406kpclsm">Terms of Use</a> | <a target="_blank" href="http://link.email.totalprotect.com/s/lt?id=341128100&si=8648865428&pc=92012&ed=n4869478&b=y">Disclosure</a> | <a href="<%= edition.unsubscribeLink %>" target="_blank">Unsubscribe</a></span><br>
+                &nbsp; <br>
+                The information in these newsletter articles is intended for the proper maintenance and care of systems and appliances in the home. Not all of the topics mentioned are intended to indicate coverage by our home warranty or service plans. Please review your contract carefully to understand what your product coverage includes. <br>
+                <br>
+                Copyright © 2014. All rights reserved. Home Protect by Cross Country Home Services <br>
+                1625 NW 136th Avenue, Building E, Suite 200, Fort Lauderdale, FL 33323<br>
+                <br>
+                 <br>
+              <a href="http://privacy.truste.com/privacy-seal/Cross-Country-Home-Services,-Inc-/validation?rid=d9cf3850-0a41-4091-9a23-0d5074288fe7" target="_blank"><img src="http://shebangdesign.com/SC/CCHS-Responsive-Email/hp-images/truste-sticker.jpg" border="0" style="margin:4px 8px;"></a><a href="https://www.bbb.org/south-east-florida/business-reviews/homeowner-insurance-and-warranty-services/homesure-of-america-in-fort-lauderdale-fl-4004196#sealclick" target="_blank"><img src="http://shebangdesign.com/SC/CCHS-Responsive-Email/hp-images/ac-sticker.jpg" border="0" style="margin:4px 8px;"></a><a href="http://www.bizrate.com/ratings_guide/merchant_detail__mid--274238.html?rf=sur" target="_blank"><img src="https://medals.bizrate.com/medals/dynamic/small/274238_medal.gif" border="0" style="margin:4px 8px;"></a><a href="http://www.totalprotect.com/our-guarantee" target="_blank"><img src="http://shebangdesign.com/SC/CCHS-Responsive-Email/hp-images/180-day-guarantee.gif" width="116" height="45" border="0" style="margin:4px 8px;" /></a></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+
+<!--     END Footer      -->
+
+</body>
+</html>

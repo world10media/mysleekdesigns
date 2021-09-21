@@ -1,0 +1,84 @@
+<div class="contact-us">
+    <div class="row">
+        <div class="small-12 columns contact-form-wrapper">
+            <div class="row">
+                <div class="small-12 medium-8 columns contact-input-section">
+                    <form class="contact-form" id="contact-us" name="form1" role="form"
+                          action="../../assets/php/contact-mail.php"
+                          onSubmit="alert('Thank you for contacting us. Your message will be reviewed by a licensed agent and you will be contacted shortly. Have a great day.');"
+                          method="post">
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <h3 class="contact-form-header">Contact Us</h3>
+                                <p class="contact-form-subheader">Fill out the short form below then click Send Message button. We will respond back to you as soon as we can.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 medium-6 columns">
+                                <label>Full Name: <span class="required">*</span>
+                                    <input type="text" name="cname" id="cname" required
+                                           placeholder="">
+                                </label>
+                            </div>
+                            <div class="small-12 medium-6 columns">
+                                <label>Company Name: <span class="required">*</span>
+                                    <input type="text" name="ccompany" id="ccompany" required
+                                           placeholder="">
+                                </label>
+                            </div>
+                            <div class="small-12 medium-6 columns">
+                                <label>Email Address: <span class="required">*</span>
+                                    <input type="email" id="cemail" name="cemail" required
+                                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                                           placeholder="">
+                                </label>
+                            </div>
+                            <div class="small-12 medium-6 columns">
+                                <label>Phone Number: <span class="required">*</span>
+                                    <input type="tel" id="cphone" name="cphone" required
+                                           pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}"
+                                           placeholder="">
+                                </label>
+                            </div>
+                            <div class="small-12 medium-6 columns">
+                                <label for="crequest">How Can We Help You: <span class="required">*</span>
+                                    <select id="crequest" name="crequest" required class="required">
+                                        <option value="">What are you looking for?</option>
+                                        <option value="partner">I want to partner with {{ domain }} in some way.</option>
+                                        <option value="mediaInquiry">I have a media inquiry for {{ domain }}.</option>
+                                        <option value="noContact">I want {{ domain }} to stop contacting me.</option>
+                                        <option value="shop">I want to shop for medicare insurance.</option>
+                                        <option value="question">I have a medicare insurance question.</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="small-12 columns">
+                                <label>Message:
+                                    <textarea rows="3" id="cmessage" name="cmessage" required
+                                              placeholder=""></textarea>
+                                </label>
+                            </div>
+
+                            <div class="small-12 medium-8 large-6 columns">
+                                <button class="button secondary float-right contact-send-message-button" type="submit">Send Us Your Message</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="small-12 medium-4 columns contact-company-info">
+
+                    <p class="contact-info"><span class="contact-info-first contact-form-info-header">Email:</span>info@{{ domain }}</p>
+                    <p class="contact-info contact-info-last"><span class="contact-form-info-header">Address:</span>
+                        Health Insurance Services Legal<br>
+                        2 Oakwood Blvd.<br>
+                        Suite 100<br>
+                        Hollywood, FL 33020 </p>
+
+                    <img class="contact-form-info-last" src="../../assets/img/contact-us-agent.jpg" alt="agent">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

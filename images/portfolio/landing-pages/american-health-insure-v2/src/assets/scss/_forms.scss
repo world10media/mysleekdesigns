@@ -1,0 +1,26 @@
+/* ---------------------------------------
+form styling - for all forms in LP
+--------------------------------------- */
+
+input[type="text"],
+input[type="select"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+#state,
+#request,
+.custom-label {
+  font-size: 16px;
+  font-weight: 400;
+  color: darken($form-input-bkgd-color,60);
+  height: rem-calc(48)!important;
+  padding-left: rem-calc(15);
+  border-radius: $global-radius;
+}
+
+
+input,
+textarea {
+  border-radius: $global-radius;
+  padding-left: rem-calc(15);
+}

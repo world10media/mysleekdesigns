@@ -1,0 +1,295 @@
+/* --------------------------
+hero
+-------------------------- */
+
+.overlay {
+  @include breakpoint(small) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darken($primary-color, 16);
+    opacity: .9;
+  }
+  @include breakpoint(medium) {
+    opacity: 0;
+  }
+}
+
+
+div.hero-v2 {
+  position: relative;
+  z-index: 1;
+  @include breakpoint(small) {
+    background: url('../img/hero-sm-min.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 650px;
+  }
+  @include breakpoint(medium) {
+    background: url('../img/hero-med-min.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 600px;
+  }
+  @include breakpoint(large) {
+    background: url('../img/hero-lg-min.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 400px;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 9999;
+
+    @include breakpoint(small) {
+      padding: rem-calc(30 30);
+    }
+    @include breakpoint(medium) {
+      padding: rem-calc(50);
+    }
+    @include breakpoint(large) {
+      padding: rem-calc(60 40);
+    }
+
+    .hero-header {
+      @include breakpoint(small) {
+        font-size: 2em;
+        color: $white;
+        line-height: 1.2em;
+        margin-bottom: rem-calc(0);
+      }
+      @include breakpoint(medium) {
+        font-size: 2.8em;
+        line-height: 1em;
+        margin-bottom: rem-calc(0);
+        color: darken($primary-color, 8);
+      }
+      @include breakpoint(large) {
+        font-size: 3.6em;
+        line-height: 1em;
+        margin-bottom: rem-calc(0);
+      }
+    }
+
+    .hero-header-callout {
+      @include breakpoint(small) {
+        font-size: 1.4em;
+        color: $white;
+        font-weight: 300;
+      }
+      @include breakpoint(medium) {
+        font-size: 1em;
+        color: darken($secondary-color,7);
+        display: inline;
+        font-weight: 400;
+      }
+    }
+
+    p.hero-subheader {
+      font-weight: 300;
+      line-height: 1em;
+      @include breakpoint(small) {
+        font-size: 1.3em;
+        color: $white;
+        margin-top: rem-calc(-5);
+      }
+      @include breakpoint(medium) {
+        font-size: 1.9em;
+        color: darken($primary-color, 7);
+      }
+    }
+
+  }
+
+  .hero-list-v2 {
+    font-weight: 300;
+    @include breakpoint(small) {
+      margin: rem-calc(30 0 30 15);
+      color: $white;
+    }
+    @include breakpoint(medium) {
+      margin: rem-calc(45 0 45 30);
+      color: darken($primary-color, 8);
+    }
+    @include breakpoint(large) {
+      margin: rem-calc(60 0 60 30);
+      color: darken($primary-color, 8);
+    }
+
+    li {
+      list-style: none;
+      margin-right: 20px;
+
+      @include breakpoint(small) {
+        font-size: 1.3em;
+        line-height: 1.7em;
+      }
+      @include breakpoint(medium) {
+        font-size: 1.6em;
+        line-height: 1.8em;
+        display: inline;
+      }
+    }
+
+  }
+
+  img.hero-list-circles-numbers {
+    margin-right: 10px;
+    @include breakpoint(small) {
+      height: 26px;
+      width: 26px;
+    }
+    @include breakpoint(medium) {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}
+
+/* --------------------------
+hero form
+-------------------------- */
+
+.hero-form-container {
+  border-radius: $global-radius;
+  padding-bottom: rem-calc(30);
+  padding-left: rem-calc(30);
+  padding-right: rem-calc(30);
+  padding-top: rem-calc(5);
+  @include breakpoint(small) {
+    width: 100%;
+    background-color: $white;
+  }
+
+    @include breakpoint(medium) {
+      max-width: 60%;
+      background-color:darken($primary-color, 6);
+    }
+
+    @include breakpoint(large) {
+      max-width: 40%;
+
+    }
+
+  h3 {
+    @include breakpoint(small) {
+      color: $primary-color;
+    }
+    @include breakpoint(medium) {
+      color: $white;
+    }
+  }
+
+  label {
+    font-size: 1.1em;
+    @include breakpoint(small) {
+      color: darken($primary-color, 15);
+    }
+    @include breakpoint(medium) {
+      color: $white;
+    }
+  }
+  }
+
+
+/* --------------------------
+hero form zip submit
+-------------------------- */
+
+input [type='text'] {
+  color: #666 !important;
+}
+
+form.hero-submit-button-v2 {
+  @include breakpoint(small) {
+    margin-top: rem-calc(10);
+  }
+  @include breakpoint(medium) {
+    margin-top: rem-calc(20);
+  }
+}
+
+
+#hero-zip-submit-input-v2 {
+
+  -moz-border-radius: $global-radius;
+  -webkit-border-radius: $global-radius;
+  border: 1px solid $secondary-color;
+
+
+}
+
+
+#hero-submit-button-input-v2 {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  padding-left: rem-calc(15);
+  border-radius: $global-radius;
+  -moz-border-radius: $global-radius;
+  -webkit-border-radius: $global-radius;
+  border: 1px solid $secondary-color;
+
+  @include breakpoint(small) {
+    font-size: 1.2em;
+    width: 100%;
+
+  }
+  @include breakpoint(medium) {
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+}
+
+#hero-submit-button-input,
+#hero-submit-button-v2 {
+
+  @include breakpoint(small) {
+    height: 54px !important;
+  }
+  @include breakpoint(medium) {
+    height: 60px !important;
+  }
+
+}
+
+#hero-submit-button-v2 {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  width: 100%;
+  background-color: $secondary-color;
+  /*border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;*/
+  margin-top:15px;
+
+  @include breakpoint(small) {
+    font-size: 1em;
+    background-color: darken($secondary-color, 10)
+
+  }
+  @include breakpoint(medium) {
+    font-size: 1.15em;
+    background-color: darken($secondary-color, 5)
+  }
+
+  &:hover {
+    background-color: lighten($primary-color, 10);
+  }
+
+  .fi-play {
+    opacity: 1;
+    position: relative;
+    font-size: 18px;
+    transform: translate(0, 0);
+
+    &:hover {
+      transition: 0.4s ease;
+      opacity: 1;
+      transform: translate(10, 0);
+    }
+
+  }
+}
